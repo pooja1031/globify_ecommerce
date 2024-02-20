@@ -28,7 +28,7 @@ class _AvailableSizeState extends State<AvailableSize> {
          border: Border.all(color: Colors.red), borderRadius: BorderRadius.circular(6),
       
         ),
-        child: Text("",style: TextStyle(fontWeight: FontWeight.bold),),
+        child: Text("",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
       ),
     );
   }

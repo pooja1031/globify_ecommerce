@@ -43,7 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
     onTap: ()=>setState(() => isSelected =index
       
     ),
-    child: Container(
+    child:
+     Container(
     width: 100,
     height: 40,
     margin: const EdgeInsets.only(top:10,right:10),

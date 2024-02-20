@@ -6,15 +6,10 @@ import 'package:myshopping/models/product.dart';
 import 'package:myshopping/presentation/screens/cart_details.dart';
 import 'package:myshopping/widgets/availabel%20_size.dart';
 
-class DetailedScreen extends StatefulWidget {
+class DetailedScreen extends StatelessWidget {
   final Products products;
   const DetailedScreen({super.key,required this. products});
 
-  @override
-  State<DetailedScreen> createState() => _DetailedScreenState();
-}
-
-class _DetailedScreenState extends State<DetailedScreen> {
   @override
   Widget build(BuildContext context) {
     final provider = CartProvider.of(context);
@@ -31,7 +26,7 @@ class _DetailedScreenState extends State<DetailedScreen> {
               width: 220,
               height: 220,
               decoration: BoxDecoration(shape: BoxShape.circle,color:Colors.redAccent),
-            child: Image.asset(widget.products.image,fit: BoxFit.cover,),
+            child: Image.asset(products.image,fit: BoxFit.cover,),
             
             ),
           ],
@@ -51,9 +46,9 @@ class _DetailedScreenState extends State<DetailedScreen> {
             child:Column(
               children: [Row(
                 children: [
-                  Text(widget.products.name.toUpperCase(),
+                  Text(products.name.toUpperCase(),
                   style: TextStyle(fontSize: 26,fontWeight: FontWeight.bold),),
-                  Text("\$""${widget.products.price}",
+                  Text("\$""${products.price}",
 style:TextStyle(
   fontSize: 22,
   fontWeight: FontWeight.bold,
@@ -67,7 +62,7 @@ style:TextStyle(
                               AvailableSize(Size: "US.6"),
                                AvailableSize(Size: "US.7"),
                               AvailableSize(Size: "US.8"),
-                             AvailableSize(Size: "US.9"),
+                             AvailableSize(Size: "US.9",),
 
                             ],),
 
@@ -107,14 +102,14 @@ Row(children: [
           )
         ),
         child:Row(children: [
-           Text("\$""${widget.products.price}",
+           Text("\$""${products.price}",
 style:TextStyle(
   fontSize: 34,
   fontWeight: FontWeight.bold,
   color: Colors.black
 )),
 ElevatedButton.icon(onPressed: (){
-  provider.toggleProducts(widget.products);
+  provider.toggleProducts(products);
   Navigator.push(context,MaterialPageRoute(builder: (context)=>const CartDetails()));
 }, icon: const Icon(Icons.send),
 label:const Text("Add to Cart"))

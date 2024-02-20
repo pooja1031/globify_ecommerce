@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myshopping/presentation/detailed_screen/detailed_screen.dart';
 import 'package:myshopping/presentation/screens/cart_details.dart';
 import 'package:myshopping/presentation/screens/favorite.dart';
 import 'package:myshopping/presentation/screens/homescreen.dart';
@@ -16,6 +17,8 @@ class _HomePageState extends State<HomePage> {
   List screens =[
     const HomeScreen(),
     const Myfav(),
+        const CartDetails(),
+
     const ProfileScreen(),
   ];
 
@@ -48,9 +51,16 @@ class _HomePageState extends State<HomePage> {
        BottomNavigationBarItem(icon: Icon(Icons.favorite),
       
       label: "favorite"),
+
+       BottomNavigationBarItem(icon: Icon(Icons.add_shopping_cart),
+      
+      label: "My Cart"),
        BottomNavigationBarItem(icon: Icon(Icons.person),
+       
       
       label: "Account"),
+
+     
       //  BottomNavigationBarItem(icon: Icon(Icons.home),
       
       // label: "Home"),
