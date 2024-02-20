@@ -101,7 +101,9 @@ Row(children: [
             topRight: Radius.circular(10)
           )
         ),
-        child:Row(children: [
+        child:Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
            Text("\$""${products.price}",
 style:TextStyle(
   fontSize: 34,

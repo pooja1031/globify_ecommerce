@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return 
       Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(10),
         child: Column(
           children: [
             const Text("Our Poducts",style: TextStyle(fontSize: 27,fontWeight: FontWeight.bold),),
