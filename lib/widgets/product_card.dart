@@ -21,11 +21,12 @@ class _ProductCardState extends State<ProductCard> {
     return Stack(
       children: [
         Container(
-          width:MediaQuery.of(context).size.width/2,
+          height: 300,
+          width:MediaQuery.of(context).size.width/1,
           padding: EdgeInsets.all(8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8.0),
-           boxShadow: [BoxShadow(color: Colors.black,blurRadius: 4,spreadRadius: 2)],
+           boxShadow: [BoxShadow(color: Color.fromARGB(254, 232, 229, 229),blurRadius: 4,spreadRadius: 2)],
             color:Colors.white
             
           ),

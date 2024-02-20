@@ -5,7 +5,7 @@ class MyProducts{
     Products(id: 1,
      name: "Nike Air Max ",
       category: "Trending Now" ,
-       image: "assets/images/Shoe.png", 
+       image: "assets/images/Watch.png", 
        description: "clean,",
         price: 1800, 
         quantity: 1),
