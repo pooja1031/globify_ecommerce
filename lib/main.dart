@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         background: Color.fromARGB(255, 248, 243, 243)),
         useMaterial3: true,
       ),
-      home:HomePage(),
+      home:SplashScreen(),
 
       // SplashScreen()
     )
