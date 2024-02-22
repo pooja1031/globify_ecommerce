@@ -19,7 +19,7 @@ class MyProducts{
         Products(id: 1,
      name: "Nike Air Max ",
       category: "Trending Now" ,
-       image: "assets/images/Galaxy-S23-Ultra.png", 
+       image: "assets/images/shirtimage.png", 
        description: "clean,",
         price: 1800, 
         quantity: 1),

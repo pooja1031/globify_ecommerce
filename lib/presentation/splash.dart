@@ -6,19 +6,21 @@ import 'package:myshopping/presentation/screens/loginscreen.dart';
 class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => HomePage(),
+          builder: (context) => LoginScreen(),
         ),
       );
     });
 
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: const Color.fromARGB(255, 156, 209, 234),
       body: Center(
-        child: Image.asset(""),
+        child: Image.asset("assets/images/homeimg1.png"),
+
       ),
+    
     );
   }
 }
